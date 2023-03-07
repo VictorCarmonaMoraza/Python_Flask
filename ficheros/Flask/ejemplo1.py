@@ -14,9 +14,11 @@ def adios():
 #rutas dinamicas
 @app.route("/saludar/<nombre>")
 def saludar(nombre):
-    return "<h2>Hola {}, byenos dias</h2>".format(nombre)
+    return "<h2>La letra en la posicion 5 del nombre es {}".format(nombre[5])
 
 
+#Arreglar errores
 
 if __name__ == '__main__':
+    #app.run(debug=True)
     app.run()
