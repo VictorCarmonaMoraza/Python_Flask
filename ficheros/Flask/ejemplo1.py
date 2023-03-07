@@ -16,9 +16,13 @@ def adios():
 def saludar(nombre):
     return "<h2>La letra en la posicion 5 del nombre es {}".format(nombre[5])
 
+@app.route("/longitud/<nombre>")
+def longitud(nombre):
+    valor = len(nombre)
+    return "<h2>La longitud de la cadena {} tiene {} letras".format(nombre,valor)
+
 
 #Arreglar errores
 
 if __name__ == '__main__':
-    #app.run(debug=True)
     app.run()
