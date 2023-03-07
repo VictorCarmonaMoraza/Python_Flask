@@ -25,6 +25,12 @@ def longitud(nombre):
 def nombreEdad(nombre,edad):
     return "<h2> {} tiene una edad de {}</h2>".format(nombre,edad)
 
+@app.route("/sumar/<numero1>/<numero2>")
+def sumar(numero1,numero2):
+    suma = int(numero1) + int(numero2)
+    resultado = str(suma)
+    return "<h2> la suma {} + {} es {}</h2>".format(numero1,numero2, resultado)
+
 
 #Arreglar errores
 
