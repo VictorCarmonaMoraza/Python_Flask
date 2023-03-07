@@ -21,6 +21,10 @@ def longitud(nombre):
     valor = len(nombre)
     return "<h2>La longitud de la cadena {} tiene {} letras".format(nombre,valor)
 
+@app.route("/edad/<nombre>/<edad>")
+def nombreEdad(nombre,edad):
+    return "<h2> {} tiene una edad de {}</h2>".format(nombre,edad)
+
 
 #Arreglar errores
 
