@@ -9,9 +9,8 @@ def portada():
 
 @app.route("/hola")
 def hola():
-    valor ="Antonio"
-    valor_edad = "35"
-    return render_template("hola.html", nombre =valor,edad=valor_edad)
+    diccionario ={'nombre':'Antonio','edad':'35', 'color':'verde'}
+    return render_template("hola.html", datos=diccionario)
 
 
 if __name__ == '__main__':
