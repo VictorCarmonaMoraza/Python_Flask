@@ -9,7 +9,9 @@ def portada():
 
 @app.route("/hola")
 def hola():
-    return render_template("hola.html")
+    valor ="Antonio"
+    valor_edad = "35"
+    return render_template("hola.html", nombre =valor,edad=valor_edad)
 
 
 if __name__ == '__main__':
