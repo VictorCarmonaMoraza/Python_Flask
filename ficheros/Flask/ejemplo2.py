@@ -19,6 +19,10 @@ def colores():
     lista_colores = ["verde","rojo", "amarillo", "azul"]
     return render_template("colores.html", colores = lista_colores)
 
+@app.route("/frase/<texto>")
+def frase(texto):
+    return render_template("frase.html",tipo =texto)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
