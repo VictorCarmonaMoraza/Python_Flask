@@ -1,0 +1,24 @@
+{% extends "basico.html" %}
+
+{% block contenido %}
+
+<h1>Introduce ekl nombre a validar</h1>
+
+<h4>Debe cumplir con los sigueinte</h4>
+
+<ul>
+    <li>Debe empezar por una letra mayuscula</li>
+    <li>Debe contener alguna letra minuscula</li>
+    <li>Debe contener algun numero</li>
+</ul>
+
+<br/>
+
+<form action="{{ url_for('resultado')}}">
+    Nombre: <input type="text" name="nombre">
+    <br/>
+    <br/>
+    <input type="submit" value="Validar dato">
+</form>
+
+{% endblock %}
